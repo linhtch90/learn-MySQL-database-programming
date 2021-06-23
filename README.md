@@ -314,8 +314,6 @@ ALTER TABLE table_name
 CHANGE COLUMN old_column new_column SMALLINT;
 ```
 
-
-
 # 7 Transactions
 
 A SQL transaction is a grouping of one or more changes to the database. Transactions help ensure a consistent state in your database. 
@@ -326,14 +324,12 @@ Four properties of transactions (ACID):
 - Isolation: All transactions are isolated from each other so that no other transaction can interfere with the other transactions that are running.
 - Durability: Once a transaction is committed, any interruption to the database's availability, such as a restart or system failure, will not affect the consistency of the data.
 
-## 7.1 A SQL Transaction
+States of a transaction:
 
 - Starting a new transaction involves using the START TRANSACTION or BEGIN keywords. This signifies the beginning of the group of SQL queries that you want to run together. 
 - Committing your changes involves making the changes permanent and uses the COMMIT keyword at the end of the transaction block.
 - Rolling back your changes involves canceling the changes and uses the ROLLBACK keyword at the end of the transaction block.
 - Auto-commit is enabled by default in MySQL, but you can disable it for a session with SET autocommit keywords. With auto-commit, you can't roll back changes, but if an error occurs, the changes are automatically rolled back. 
-
-States of a transaction:
 
 ![transaction_state](./Image/transaction_states.png)
 
