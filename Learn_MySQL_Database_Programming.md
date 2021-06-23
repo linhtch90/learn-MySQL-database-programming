@@ -550,27 +550,3 @@ ON tablename FOR EACH ROW
 triggerbody;
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
