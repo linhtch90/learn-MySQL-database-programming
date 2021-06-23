@@ -316,7 +316,7 @@ CHANGE COLUMN old_column new_column SMALLINT;
 
 
 
-# 7 Tranctions
+# 7 Transactions
 
 A SQL transaction is a grouping of one or more changes to the database. Transactions help ensure a consistent state in your database. 
 
